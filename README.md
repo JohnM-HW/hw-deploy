@@ -12,11 +12,11 @@ Deployment Tracker is a tool for tracking deployments using Firebase and Streaml
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/deployment-tracker.git
+    git clone git@github.com:JohnM-HW/hw-deploy.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd deployment-tracker
+    cd hw-deploy
     ```
 3. Install the required dependencies:
     ```bash
@@ -31,10 +31,7 @@ Deployment Tracker is a tool for tracking deployments using Firebase and Streaml
     ```
 2. Open your web browser and go to `http://localhost:8501` to access the app.
 
-## Configuration
 
-- Ensure your Firebase credentials are set up in the `firebase_config.json` file.
-- Configure Jenkins to send deployment data to the app.
 
 ## Contributing
 
@@ -55,10 +52,6 @@ We welcome contributions! Please follow these steps:
     ```
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Contact
 
-For any questions or suggestions, please open an issue or contact us at your-email@example.com.
+For any questions or suggestions, please open an issue or contact us at sre@hostelworld.com
