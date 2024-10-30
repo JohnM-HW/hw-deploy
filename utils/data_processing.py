@@ -11,4 +11,7 @@ def process_data(all_data, prod_data, stg_data, test_data):
     grouped_data = df.groupby("timestamp").size().to_frame(name='RecordCount')
     result = grouped_data.reindex(date_range).fillna(0)
 
+    df_prod["timestamp"] = pd.to_datetime(df_prod["timestamp"])
+
     return df, df_prod, df_stg, df_test, result
+
