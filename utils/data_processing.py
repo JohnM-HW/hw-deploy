@@ -12,6 +12,13 @@ def process_data(all_data, prod_data, stg_data, test_data):
     result = grouped_data.reindex(date_range).fillna(0)
 
     df_prod["timestamp"] = pd.to_datetime(df_prod["timestamp"])
+    df_stg["timestamp"] = pd.to_datetime(df_prod["timestamp"])
+    df_test["timestamp"] = pd.to_datetime(df_test["timestamp"])
 
     return df, df_prod, df_stg, df_test, result
 
+def process_full_data(full_data):
+    df = pd.DataFrame(full_data)
+    df["timestamp"] = pd.to_datetime(df["timestamp"])
+
+    return df
