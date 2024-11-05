@@ -22,9 +22,4 @@ def load_data():
 df, df_prod, df_stg, df_test, result = load_data()
 
 
-
-# Display metrics for the desired DataFrame
-# Convert Timestamp
-df_stg["timestamp"] = pd.to_datetime(df_stg["timestamp"])
-
 display_metrics(df_stg)
