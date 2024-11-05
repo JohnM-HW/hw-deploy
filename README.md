@@ -6,7 +6,11 @@ Deployment Tracker is a tool for tracking deployments using Firebase and Streaml
 
 - Track deployments in real-time
 - Visualize deployment history
-- Integrate seamlessly with Jenkins
+
+## WIP 
+- Adding a github action
+
+
 
 ## Installation
 
