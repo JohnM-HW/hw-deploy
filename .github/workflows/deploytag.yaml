@@ -1,0 +1,19 @@
+name: Deploy Register Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run deploy-register-action
+        uses: JohnM-HW/deploy-register-action@main
+        with:
+          app-name: 'hw-deploy'
