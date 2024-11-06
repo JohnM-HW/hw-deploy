@@ -1,4 +1,4 @@
-name: Deploy Register Action
+name: Use Custom Action
 
 on:
   push:
@@ -6,14 +6,17 @@ on:
       - main
 
 jobs:
-  deploy:
+  call-custom-action:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Run deploy-register-action
-        uses: JohnM-HW/deploy-register-action/.github/deploy-register-action@main
+      - name: Use Send Payload Action
+        uses: JohnM-HW/deploy-register-action/.github/deploy-register-actio@v1.0.0
         with:
-          app-name: 'hw-deploy'
+          webhook_url: "https://us-central1-hw-sre.cloudfunctions.net/register"
+          deployment_version: "1.1.1"
+          app_name: "My APP"
+          rollback_version: "0.0.1"
