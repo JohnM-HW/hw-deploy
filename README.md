@@ -63,4 +63,5 @@ We welcome contributions! Please follow these steps:
 
 ## Contact
 
+.
 For any questions or suggestions, please open an issue or contact us at sre@hostelworld.com
