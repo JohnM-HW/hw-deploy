@@ -30,12 +30,13 @@ Deployment Tracker is a tool for tracking deployments using Firebase and Streaml
     ```bash
     docker run -p 8501:8501 -v $(pwd)/credentials.json:/app/credentials.json -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json hw-deploy
     ```
+5. Open your web browser and go to `http://localhost:8501` to access the app.
 
-## Usage
+## Run Locally
 
 1. Start the Streamlit app:
     ```bash
-    streamlit run app.py
+    streamlit run main.py
     ```
 2. Open your web browser and go to `http://localhost:8501` to access the app.
 
