@@ -22,9 +22,13 @@ Deployment Tracker is a tool for tracking deployments using Firebase and Streaml
     ```bash
     cd hw-deploy
     ```
-3. Install the required dependencies:
+3. Build the container:
     ```bash
-    pip install -r requirements.txt
+    docker build -t hw-deploy .
+    ```
+4. Run the container:
+    ```bash
+    docker run -p 8501:8501 -v $(pwd)/credentials.json:/app/credentials.json -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json hw-deploy
     ```
 
 ## Usage
