@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Use Send Payload Action
-        uses: JohnM-HW/deploy-register-action/.github/deploy-register-action@v1.0.4
+        uses: JohnM-HW/deploy-register-action@main
         with:
           webhook_url: "https://us-central1-hw-sre.cloudfunctions.net/register"
           deployment_version: "1.1.1"
